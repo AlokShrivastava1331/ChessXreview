@@ -1,17 +1,17 @@
-FROM node:20
+# FROM node:20
 
-LABEL name="wintrcat/freechess"
-LABEL version="1.0.0"
+# LABEL name="wintrcat/freechess"
+# LABEL version="1.0.0"
 
-WORKDIR /usr/app/
+# WORKDIR /usr/app/
 
-COPY . .
+# COPY . .
 
-RUN npm install -g typescript
-RUN npm i
+# RUN npm install -g typescript
+# RUN npm i
 
-ENV PORT 80
+# ENV PORT 80
 
-EXPOSE 80/tcp
+# EXPOSE 80/tcp
 
-ENTRYPOINT ["npm", "start"]
+# ENTRYPOINT ["npm", "start"]
