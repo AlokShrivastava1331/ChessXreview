@@ -16,6 +16,10 @@ app.use("/static",
 
 app.use("/api", apiRouter);
 
+app.get("/gg", async (req, res) => {
+    res.json("hello");
+});
+
 app.get("/", async (req, res) => {
     res.sendFile(path.resolve("src/public/pages/report/index.html"));
 });
