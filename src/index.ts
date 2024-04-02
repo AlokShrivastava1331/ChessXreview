@@ -17,7 +17,7 @@ app.use("/static",
 app.use("/api", apiRouter);
 
 app.get("/", async (req, res) => {
-    res.sendFile(path.resolve("src/public/pages/report/index.html"));
+    res.sendFile(path.resolve("https://chess-xreview-pup5.vercel.app/"));
 });
 
 app.get("/privacy", async (req, res) => {
